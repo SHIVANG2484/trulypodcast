@@ -6,10 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copyright Policy - Truly Podcast</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="loader.css">
     <link rel="icon" href="im/c.jpg">
     <meta name="description" content="Welcome to The Copyright Page of Truly Podcast | In this page We defined all Copyright  Rules and Regulations.">
 </head>
 <body>
+  <!-- loader  -->
+  <div id="loader" class="center"></div>
+  
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  "#loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+  <!-- loader  -->
     <!-- navbar  -->
   <header class="text-gray-600 body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">

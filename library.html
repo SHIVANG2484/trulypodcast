@@ -12,6 +12,7 @@
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a2b3da0c65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="loader.css">
 
     <title>Library - Truly Podcast [ Music | Podcast | Audio ]</title>
 	<meta name="description" content="Welcome to Audio Library of Truly Podcast | Here you will find Podcast, Music, Audio | Truly Podcast is a indian Podcast Platform.">
@@ -107,7 +108,27 @@
     </style>
  	</head>
 	<body>
-
+<!-- loader  -->
+<body>
+    <div id="loader" class="center"></div>
+    
+   
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  "#loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+<!-- loader  -->
 <div class="main">
 	<div class="container">
 		<div class="row">
