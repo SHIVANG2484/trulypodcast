@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="im/tp.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- APlayer CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a2b3da0c65.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <title>Library - Truly Podcast [ Music | Podcast | Audio ]</title>
+	<meta name="description" content="Welcome to Audio Library of Truly Podcast | Here you will find Podcast, Music, Audio | Truly Podcast is a indian Podcast Platform.">
+    <style>
+    	body{
+    		background-color: #f7f7f7;
+    		font-family: Open sans;
+    	}
+    	img{
+    		width: 100%;
+    		min-height: 250px;
+    	}
+    	.main{
+    		padding: 40px 0;
+    	}
+    	.col-md-3{
+    		margin-bottom: 40px;
+    	}
+    	.album-poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 7px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 35px #3d2173a1;
+    		transition: all ease 0.4s;
+    	}
+    	.album-poster:hover{
+    		box-shadow: none;
+    		transform: scale(0.98) translateY(5px);
+    	}
+    	h3{
+    		font-size: 34px;
+    		margin-bottom: 34px;
+    		border-bottom: 4px solid #e6e6e6;
+    		padding-bottom: 15px;
+    	}
+    	p{
+    		font-size: 15px;
+    	}
+    	h4{
+    		font-size: 16px;
+    		text-transform: uppercase;
+    		margin-top: 15px;
+    		font-weight: 700;
+    	}
+		
+
+		/*default is hide music player*/
+		#aplayer{
+			position: fixed;
+			bottom: -100%;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			box-shadow: 0 -2px 2px #dadada;
+			background-color: #fff;
+			transition: all ease 0.5s;
+		}
+		#aplayer.showPlayer{
+			bottom: 0;
+		}
+
+		
+		/*MUSIC PLAYER CUSTOMIZING STYLE*/
+		span{
+			color: #000 !important;
+			font-size: 16px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+			background: #e0e0e0;
+    		height: 4px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+			height: 4px;
+			background-color: #2196F3 !important;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+			background-color: #2196F3 !important;
+		}
+
+		.aplayer .aplayer-icon{
+			width: 20px;
+			height: 20px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+		    fill: #000;
+		}
+		.aplayer .aplayer-info .aplayer-music{
+			margin-bottom: 5px;
+		}
+
+
+    </style>
+ 	</head>
+	<body>
+
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Library</h3>
+			</div>
+			<div class="col-md-3">
+				<a href="javascript:void();" class="album-poster" data-switch="0">
+					<img src="source/p1.png" alt="">
+				</a>
+				<h4>The Inspiring Journey Of A LIVING LEGEND - @A. R. Rahman​ | The Ranveer Show 106</h4>
+				<p>A.R. Rahman is the most legendary singer, music composer, songwriter, and record producer in India today. In 2009, for his Slumdog Millionaire score, A. R. Rahman won the Broadcast Film Association Award, two Golden Globe awards, the BAFTA award, and two Oscar (Academy) awards. In 2010, AR Rahman also won a Padma Bhushan, India’s third-highest civilian award for his tremendous work in the music industry. </p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="1">
+					<img src="source/p2.png" alt="">
+				</a>
+				<h4>@CarryMinati​'s REAL LIFE Story | The Ranveer Show</h4>
+				<p>In this CarryMinati interview, we find out how he became one of the top 10 Indian YouTube channels. He says that you should give everything you got and if all doesn't turn out to be at long last, you can say that in any event you put forth a valiant effort. Through this Ajey Nagar interview, we hope to know how he is behind cameras, the actual Ajey Nagar.</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="2">
+					<img src="source/p3.png" alt="">
+				</a>
+				<h4>Ashish Chanchlani On YouTube Growth Hacks, Bollywood & Career Inspirations | The Ranveer Show 30</h4>
+				<p>Ashish takes us through his career journey, his YouTube growth hacks & his childhood inspirations. A big chunk of the episode is all about the content pieces that had a deep impact on Ashish while he was growing up - his favorite directors, favorite movies, favorite cartoons, and favorite TV shows. We've also spoken about aspects like what the next 10 years of YouTube are going to be about, so if you're a young content creator, I believe you'll particularly enjoy this episode! India's YouTube sensation Ashish Chanchlani on The Ranveer Show.</p>
+			</div>
+
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="3">
+					<img src="source/p4.png" alt="">
+				</a>
+				<h4>Dr. Vivek Bindra On Self Motivation, NoFap & The Future of Business in India | The Ranveer Show 58</h4>
+				<p>Dr. Vivek Bindra is widely considered as the country's TOP business & leadership guru. 
+					He's also one of the country's TOP YouTube influencers. His content is primarily created in Hindi and primarily created for Indian audiences. Dr. Bindra makes use of his years of business and sales experience while combining it with his detailed knowledge about spirituality and the Bhagawad Gita to coach some of the country's top leaders. </p>
+			</div>
+			<div class="col-md-3">
+				<a href="javascript:void();" class="album-poster" data-switch="4">
+					<img src="source/p5.png" alt="">
+				</a>
+				<h4>Technical Guruji - An inspirational talk | Hustlers Talk #2</h4>
+				<p>Gaurav Chaudhary, known professionally as Technical Guruji, is an Indian YouTube | Bussiness Man that live in UAE. Chaudhary is notable for producing YouTube videos concerning technology in Hindi.</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="5">
+					<img src="source/p6.png" alt="">
+				</a>
+				<h4>🤑Every Young Millionaire Has This Mindset | @Tech Burner​ | Shlok Srivastava | Josh Talks</h4>
+				<p>Tech burner was another average student in school who had a lot of interest in technology. He didn't stop after failures and kept on experimenting in life to become one of the youngest millionaires. Watch this Josh Talk of Tech burner to know his 3 life changing experiences that made him a millionaire at the age of 23 despite the failures on his way.</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="6">
+					<img src="source/p7.png" alt="">
+				</a>
+				<h4>झुकती है दुनिया, झुकाने वाला चाहिए | @Techno Gamerz​ | @Ujjwal​ Chaurasia | Josh Talks Hindi</h4>
+				<p>Ujjwal started playing online games at an early age. The first video game he played was “Snowbros” which he used to play at his brother’s house and after some time he started playing GTA: Vice City which made him fall in love with the online games.
+					He started gaming on his elder brother’s mobile phone which was a Nokia 5 and started his first channel by his name ‘Ujjwal Chaurasia’. He started recording his gaming sessions and uploading them on his channel. Initially, he would get 200-300 views in 2 months and the views kept growing gradually. His elder brother encouraged him to concentrate more on his Youtube channel.</p>
+			</div>
+
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="7">
+					<img src="source/p8.png" alt="">
+				</a>
+				<h4>फोड़ दो या छोड़ दो 🔥🔥 | Must Listen For All Students | @Aman Dhattarwal​ | Josh Talks Hindi</h4>
+				<p>Aman is well known for his educational and motivational videos, which he uploads on his youtube channel. 
+					Aman Dhattarwal created his Youtube channel in which he started uploading videos regarding board exam preparations and career opportunities.
+					
+					Aman is also a founder of @Apni Kaksha​ . It is also a YouTube channel created by Aman Dhattarwal. In this channel, he uploads videos regarding Btech education.</p>
+			</div>
+
+			<!-- <div class="col-md-3">
+				<a href="javascript:void();" class="album-poster" data-switch="0">
+					<img src="source/p1.png" alt="">
+				</a>
+				<h4>The Inspiring Journey Of A LIVING LEGEND - @A. R. Rahman​ | The Ranveer Show 106</h4>
+				<p>.R. Rahman is the most legendary singer, music composer, songwriter, and record producer in India today. In 2009, for his Slumdog Millionaire score, A. R. Rahman won the Broadcast Film Association Award, two Golden Globe awards, the BAFTA award, and two Oscar (Academy) awards. In 2010, AR Rahman also won a Padma Bhushan, India’s third-highest civilian award for his tremendous work in the music industry. </p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="1">
+					<img src="source/p2.png" alt="">
+				</a>
+				<h4>@CarryMinati​'s REAL LIFE Story | The Ranveer Show</h4>
+				<p>In this CarryMinati interview, we find out how he became one of the top 10 Indian YouTube channels. He says that you should give everything you got and if all doesn't turn out to be at long last, you can say that in any event you put forth a valiant effort. Through this Ajey Nagar interview, we hope to know how he is behind cameras, the actual Ajey Nagar.</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="2">
+					<img src="source/p3.png" alt="">
+				</a>
+				<h4>adipisicing elit</h4>
+				<p>Porro distinctio fuga - 2020</p>
+			</div>
+
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="3">
+					<img src="source/p4.png" alt="">
+				</a>
+				<h4>Atque ab</h4>
+				<p>Harum nam unde digniss - 2020</p>
+			</div> -->
+
+
+		<!-- <div class="row">
+			<div class="col-md-12">
+				<h3>coming soon</h3>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Lorem ipsum</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Repellat illo</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>adipisicing elit</h4>
+			</div>
+			
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Atque ab</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Fugiat Silly</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>veniam expedita</h4>
+			</div>
+		</div>
+
+
+	</div> -->
+</div>
+
+	<div id="aplayer"></div>
+
+	<!-- Jquery Link -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<!-- Bootstrap Link -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- APlayer Jquery link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
+
+
+	<script>
+
+
+		// NOW I CLICK album-poster TO GET CURRENT SONG ID
+		$(".album-poster").on('click', function(e){
+			var dataSwitchId = $(this).attr('data-switch');
+			//console.log(dataSwitchId);
+
+			// and now i use aplayer switch function see
+			ap.list.switch(dataSwitchId); //this is static id but i use dynamic 
+
+			// aplayer play function
+			// when i click any song to play
+			ap.play();
+
+			// click to slideUp player see
+			$("#aplayer").addClass('showPlayer');
+		});
+
+		const ap = new APlayer({
+		    container: document.getElementById('aplayer'),
+		    listFolded: true,
+		    audio: [
+		    {
+		        name: 'A.R Rahman is a popular indian singer.',
+		        artist: 'TheRanveerShow',
+		        url: 'source/p1.mp3',
+		        cover: 'source/p1.png'
+		    },
+			{
+		        name: 'CarryMinati is the Biggest youtuber of India | Asia.',  // SONG NAME
+		        artist: 'TheRanveerShow', //ARTIST NAME
+		        url: 'source/p2.mp3', // PATH NAME AND SONG URL
+		        cover: 'source/p2.png' // COVER IMAGE
+		    },
+			{
+				name: 'Ashish Chanchlani is a very popular Youtuber of India',
+				artist: 'TheRanveerShow',
+				url: 'source/p3.mp3',
+				cover: 'source/p3.png',
+			},
+			{
+				name: 'Dr. Vivek Bindra is the no.1 bussiness trainer in asia.',
+				artist: 'TheRanveerShow',
+				url: 'source/p4.mp3',
+				cover: 'source/p4.png',
+			},
+			{
+				name: 'Gaurav Chaudhary is the most successful Tech YouTuber of the World.',
+				artist: 'HUSTLERS BAY',
+				url: 'source/p5.mp3',
+				cover: 'source/p5.png',
+			},
+			{
+				name: 'Tech Burner is the most successfull Tech Influencer Of India.',
+				artist: 'JoshTalks',
+				url: 'source/p6.mp3',
+				cover: 'source/p6.png',
+			},
+			{
+				name: 'Techno Gamerz is the most successfull Gaming YouTuber Of India in terms of views.',
+				artist: 'JoshTalks',
+				url: 'source/p7.mp3',
+				cover: 'source/p7.png',
+			},
+			{
+				name: 'Aman Dhattarwal is the most successfull Public Speaker Of India under the age of 25.',
+				artist: 'JoshTalks',
+				url: 'source/p8.mp3',
+				cover: 'source/p8.png',
+			}
+
+
+		    ]
+		});
+	</script>
+	 <!-- footer  -->
+	 <footer class="text-gray-600 body-font">
+		<div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+		  <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+			<!-- <img src="im/tp.jpg" alt="h" width="30" height="24" class="d-inline-block align-text-top"> -->
+			<span class="ml-3 text-xl">Truly Podcast</span>
+		  </a>
+		  <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 <a href="https://tailblocks.cc">Tailblocks</a> | <a href="https://itsunknown.tk">itsunknown</a> | <a href="cp.html">Copyright Policy</a>—
+			<a href="https://instagram.com/itsunknown.in" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@itsunknown.in</a>
+		  </p>
+		  <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+			<!-- <a class="text-gray-500">
+			  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+				<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+			  </svg>
+			</a> -->
+			<!-- <a class="ml-3 text-gray-500">
+			  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+				<path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+			  </svg>
+			</a> -->
+			<a class="ml-3 text-gray-500" href="https://instagram.com/itsunknown.in">
+			  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+				<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+				<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+			  </svg>
+			</a>
+			<!-- <a class="ml-3 text-gray-500"> -->
+			  <!-- <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+				<path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+				<circle cx="4" cy="4" r="2" stroke="none"></circle>
+			  </svg> -->
+			</a>
+		  </span>
+		</div>
+	  </footer>
+	  <!-- footer  -->
+	</body>
+</html>
